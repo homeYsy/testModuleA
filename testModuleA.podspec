@@ -1,38 +1,18 @@
-#
-# Be sure to run `pod lib lint testModuleA.podspec' to ensure this is a
-# valid spec before submitting.
-#
-# Any lines starting with a # are optional, but their use is encouraged
-# To learn more about a Podspec see https://guides.cocoapods.org/syntax/podspec.html
-#
+Pod::Spec.new do |spec|
 
-Pod::Spec.new do |s|
-  s.name             = 'testModuleA'
-  s.version          = '0.0.1'
-  s.summary          = 'A short description of testModuleA.'
+  spec.name         = "testModuleA"
+  spec.version      = "0.0.2"
+  spec.summary      = "基础组件"
+  spec.description  = "杭州通用基础组件"
+  spec.homepage     = "https://github.com/yangshiyu666/testModuleA"
+  spec.license      = "MIT"
+  spec.author             = { "DJAPpple_4" => "6606302@qq.com" }
+  spec.platform     = :ios
+  spec.ios.deployment_target = "8.0"
+  spec.source       = { :git => "https://github.com/yangshiyu666/testModuleA.git", :tag => "#{spec.version}" }
+  spec.source_files  =  "testModuleA/Classes/**/*.{h,m}"
+  spec.requires_arc = true
+  spec.dependency  "SDWebImage"
+  spec.dependency "testModule"
 
-
-
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
-
-  s.homepage         = 'https://github.com/yangshiyu666/testModuleA'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { '864745256@qq.com' => 'wyh900207@126.com' }
-  s.source           = { :git => 'https://github.com/yangshiyu666/testModuleA.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
-  s.ios.deployment_target = '8.0'
-
-  s.source_files = 'testModuleA/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'testModuleA' => ['testModuleA/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end

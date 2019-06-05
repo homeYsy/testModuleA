@@ -7,12 +7,16 @@
 //
 
 #import "DJAppDelegate.h"
-
+#import <testModuleA/DJModuleAViewController.h>
 @implementation DJAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    DJModuleAViewController   *moduleA = [[DJModuleAViewController alloc]init];
+//    moduleA.view.backgroundColor = [UIColor redColor];
+    self.window.rootViewController = moduleA;
+    [self.window makeKeyAndVisible];
     return YES;
 }
 
