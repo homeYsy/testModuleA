@@ -12,7 +12,6 @@ Pod::Spec.new do |spec|
   spec.source       = { :git => "https://github.com/yangshiyu666/testModuleA.git", :tag => "#{spec.version}" }
   spec.source_files  =  "testModuleA/Classes/**/*.{h,m}"
   spec.requires_arc = true
-  spec.dependency  "SDWebImage"
   spec.dependency "testModule"
 
 end
