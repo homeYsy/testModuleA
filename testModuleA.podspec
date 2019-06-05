@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "testModuleA"
-  spec.version      = "0.0.3"
+  spec.version      = "0.1.0"
   spec.summary      = "基础组件"
   spec.description  = "杭州通用基础组件"
   spec.homepage     = "https://github.com/yangshiyu666/testModuleA"
